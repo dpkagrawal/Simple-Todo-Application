@@ -41,7 +41,6 @@ public class TodoActivity extends Activity {
 			public boolean onItemLongClick(AdapterView<?> aView, View item,
 					int pos, long id) {
 				items.remove(pos);
-				// itemsAdapter.notifyDataSetInvalidated();
 				itemsAdapter.notifyDataSetChanged();
 				saveItems();
 				return true;
